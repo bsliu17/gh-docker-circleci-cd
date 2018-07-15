@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /dockerapp
     docker:
-      - image: docker:17.05.0-ce-git
+      - image: 176616422154.dkr.ecr.us-west-2.amazonaws.com/circleci-01:latest
         aws_auth:
             aws_access_key_id: $AWS_SECRET_ACCESS_KEY
             aws_secret_access_key: $ECR_AWS_SECRET_ACCESS_KEY  # or project UI envar reference
